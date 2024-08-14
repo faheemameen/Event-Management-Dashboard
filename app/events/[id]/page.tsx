@@ -37,7 +37,7 @@ const EventDetailsPage = ({ params }: any) => {
   const handleDelete = async (id: string) => {
     console.log(id);
     try {
-      const response = await fetch(`http://localhost:3000/api/event/${id}`, {
+      const response = await fetch(`api/event/${id}`, {
         method: "DELETE",
       });
       if (!response.ok) throw new Error("Failed to delete event");
