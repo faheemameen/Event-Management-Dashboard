@@ -1,6 +1,7 @@
 import { NextResponse, NextRequest } from "next/server";
 
 const api = "tw_NjQf3ujLhr-AXlNy_9rynJgo6iqsS_66g_XP5FIn0fkIqiQ";
+let allowedOrigin: "https://event-management-dashboard-ar2j01a8p-faheemameens-projects.vercel.app/";
 
 export async function GET(request: NextRequest) {
   try {
@@ -8,7 +9,7 @@ export async function GET(request: NextRequest) {
       headers: {
         Authorization: `Bearer ${api}`,
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Origin": allowedOrigin,
         "Access-Control-Allow-Methods": "GET, POST,  DELETE",
         "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
@@ -31,7 +32,7 @@ export async function POST(request: NextRequest) {
       headers: {
         Authorization: `Bearer ${api}`,
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Origin": allowedOrigin,
         "Access-Control-Allow-Methods": "GET, POST,  DELETE",
         "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
