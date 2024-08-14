@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const api = "APi_Key";
+const api = "tw_NjQf3ujLhr-AXlNy_9rynJgo6iqsS_66g_XP5FIn0fkIqiQ";
 
 export async function GET(request: NextRequest) {
   const id = new URL(request.url).pathname.split("/").pop();

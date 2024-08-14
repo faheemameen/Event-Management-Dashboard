@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const IAMGE_API_KEY = "IMAGE_API_KEY";
+const IAMGE_API_KEY = "6d207e02198a847aa98d0a2a901485a5";
 
 export async function GET() {
   return NextResponse.json({ message: "API is working!" }, { status: 200 });

@@ -5,7 +5,7 @@ import EventCard from "./components/EventCard";
 import SearchBar from "./components/SearchBar";
 import Loader from "./components/Loader";
 import { Event } from "@/types/EventTypes";
-import Pagination from "./components/PAgination";
+import Pagination from "./components/Pagination";
 
 const Home: React.FC = () => {
   const ITEMS_PER_PAGE = 6;
@@ -67,12 +67,12 @@ const Home: React.FC = () => {
         ) : (
           <p className=" text-2xl">No events found</p>
         )}
-        <Pagination
-          currentPage={currentPage}
-          totalPages={totalPages}
-          onPageChange={handlePageChange}
-        />
       </div>
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={handlePageChange}
+      />
     </div>
   );
 };

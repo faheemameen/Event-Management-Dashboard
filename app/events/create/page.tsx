@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import React from "react";
-import Navbar from "@/app/components/Navbar";
 import { Event } from "../../../types/EventTypes";
 import { useRouter } from "next/navigation";
 

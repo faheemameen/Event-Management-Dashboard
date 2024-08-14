@@ -10,11 +10,11 @@ body {
   justify-content: center;
   margin-top: 20px;
 }
-@media (min-width: 1024px) {
+/* @media (min-width: 768px) {
   .pagination {
     margin-left: auto;
   }
-}
+} */
 
 .pagination button {
   margin: 0 5px;

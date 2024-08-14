@@ -1,6 +1,6 @@
 import { NextResponse, NextRequest } from "next/server";
 
-const api = "API_KEY";
+const api = "tw_NjQf3ujLhr-AXlNy_9rynJgo6iqsS_66g_XP5FIn0fkIqiQ";
 
 export async function GET(request: NextRequest) {
   try {
