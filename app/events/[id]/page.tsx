@@ -17,7 +17,7 @@ const EventDetailsPage = ({ params }: any) => {
   useEffect(() => {
     const fetchEvent = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/api/event/${id}`);
+        const response = await fetch(`/api/event/${id}`);
         if (!response.ok) {
           throw new Error("Failed to fetch event");
         }
