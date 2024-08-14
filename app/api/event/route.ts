@@ -7,6 +7,10 @@ export async function GET(request: NextRequest) {
     const response = await fetch(`https://crudapi.co.uk/api/v1/events`, {
       headers: {
         Authorization: `Bearer ${api}`,
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST,  DELETE",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
     });
     const data = await response.json();
@@ -27,6 +31,9 @@ export async function POST(request: NextRequest) {
       headers: {
         Authorization: `Bearer ${api}`,
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST,  DELETE",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
       body: JSON.stringify([eventData]),
     });

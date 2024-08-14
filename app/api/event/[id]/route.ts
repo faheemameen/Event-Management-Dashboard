@@ -10,6 +10,9 @@ export async function GET(request: NextRequest) {
       headers: {
         Authorization: `Bearer ${api}`,
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST,  DELETE",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
     });
     if (!response.ok) {
@@ -38,6 +41,9 @@ export async function DELETE(request: NextRequest) {
       headers: {
         Authorization: `Bearer ${api}`,
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST,  DELETE",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
     });
     if (!response.ok) {
