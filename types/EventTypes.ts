@@ -5,5 +5,5 @@ export interface Event {
   endDateTime: string;
   venue: string;
   description: string;
-  headerImage: string | File;
+  headerImage: any;
 }
